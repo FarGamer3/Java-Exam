@@ -10,18 +10,21 @@ async function handleLogin() {
         const password = getValue('pwd')
         console.log(email)
         console.log(password)
-        const respone = await  fetch(`${API}/login`, {
+        const respone = await fetch(`${API}/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-        },
+            },
             body: JSON.stringify({ email, password })
         })
         const result = await respone.json()
-        if(respone.status !== 200) {
+        if (respone.status !== 200) {
             return alert('Email or password is incorrect')
         }
         localStorage.setItem('token', result.token)
+
+
+        
         window.location.href = 'index.html'
     } catch (error) {
         console.error(error)
@@ -34,22 +37,24 @@ async function handleRegister() {
         const password = getValue('rpwd')
         const fname = getValue('fname')
         const lname = getValue('lname')
-        const respone = await  fetch(`${API}/register`, {
+        const respone = await fetch(`${API}/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-        },
-            body: JSON.stringify({ email, password,fname,lname })
+            },
+            body: JSON.stringify({ email, password, fname, lname })
         })
         const result = await respone.json()
-        if(respone.status === 200) {
-             alert('Register success')
-             window.location.href = 'register-login.html'
-             return
+        if (respone.status === 200) {
+            alert('Register success')
+            window.location.href = 'register-login.html'
+            return
         }
         alert('Register fail')
     } catch (error) {
         console.error(error)
     }
 }
+
+
 

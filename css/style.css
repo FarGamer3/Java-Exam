@@ -765,6 +765,7 @@ ul, ol {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+	
 }
 .hp-room-items .hp-room-item .hr-text h3 {
 	color: #a7da43;

@@ -186,7 +186,7 @@ ul, ol {
   }
   
   .button:hover::before {
-	scale: 3;
+	scale: 1;
   }
   
   .button:hover {

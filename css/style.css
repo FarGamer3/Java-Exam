@@ -10386,9 +10386,12 @@ del {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+<<<<<<< HEAD
 }
 .polio{
   position: relative;
   top: -60px;
   left: 180px;
+=======
+>>>>>>> d4d727ab6b0da62fcf9445ecadade4ad85fee22c
 }

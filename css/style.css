@@ -10387,3 +10387,8 @@ del {
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
+.polio{
+  position: relative;
+  top: -60px;
+  left: 180px;
+}

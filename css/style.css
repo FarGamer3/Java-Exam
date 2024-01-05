@@ -118,7 +118,8 @@ ul, ol {
 .spad {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: ;
+  animation: myAnim 1s ease 2s 1 normal forwards;
+  background: ;
 }
 .spad-2 {
 	padding-top: 50px;
@@ -314,10 +315,11 @@ ul, ol {
 	display: inline-block;
 	font-size: 16px;
 	color: #f1f1f1;
-	font-weight: 500;
+	font-weight: 50;
 	padding: 14px 0 12px;
 	margin-right: 64px;
 	position: relative;
+  
 }
 .top-nav .tn-left li:after {
 	position: absolute;
@@ -425,16 +427,19 @@ ul, ol {
 	background: #222736;
 }
 .menu-item .logo {
-	padding: 25px 0;
+  padding: 30px 0;
 }
 .menu-item .logo a {
 	display: inline-block;
 }
 .menu-item .nav-menu {
 	text-align: right;
+  
 }
 .menu-item .nav-menu .mainmenu {
 	display: inline-block;
+  text-align: center;
+  
 }
 .menu-item .nav-menu .mainmenu li {
 	list-style: none;
@@ -536,13 +541,14 @@ ul, ol {
 
 .hero-section {
 	position: relative;
-	padding-top: 60px;
+	padding-top: 220px;
 	padding-bottom: 100px;
+ 
 }
 .hero-section .container {
 	position: relative;
 	z-index: 5;
-	background: ;
+	background:;
 }
 .hero-text {
 	padding-top: 145px;
@@ -1584,6 +1590,13 @@ ul, ol {
 	position: relative;
 	margin-bottom: 30px;
 	border-radius: 5px;
+  
+  overflow: hidden;
+  cursor: pointer;
+}
+.blog-item.set-bg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 .blog-item.small-size {
 	height: 400px;
@@ -10386,12 +10399,81 @@ del {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
-<<<<<<< HEAD
 }
 .polio{
   position: relative;
   top: -60px;
   left: 180px;
-=======
->>>>>>> d4d727ab6b0da62fcf9445ecadade4ad85fee22c
+}
+.navbar-area {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff; /* Change this to your desired background color */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+.additional-text {
+  display: none; /* Initially hide the additional text */
+}
+
+.blog-item.active .additional-text {
+  display: block; /* Show the additional text when the item is clicked */
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.blog-item .additional-text {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1s ease, max-height 2s ease;
+}
+
+.blog-item.active .additional-text {
+  display: block;
+  opacity: 1;
+  max-height: 1000px; /* Set a value that is greater than the expected height of your text */
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(0px);
+	}
+
+	72% {
+		animation-timing-function: ease-in;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(0px);
+	}
+
+	90% {
+		animation-timing-function: ease-in;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-in;
+		transform: translateY(0);
+	}
 }

@@ -118,7 +118,7 @@ ul, ol {
 .spad {
 	padding-top: 100px;
 	padding-bottom: 100px;
-  animation: myAnim 1s ease 2s 1 normal forwards;
+ 
   background: ;
 }
 .spad-2 {
@@ -357,7 +357,7 @@ ul, ol {
 .top-nav .tn-right .bk-btn {
 	display: inline-block;
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 400;
 	padding: 16px 28px 15px;
 	background: #dfa974;
 	color: #f6f6f6;
@@ -379,7 +379,7 @@ ul, ol {
 .top-nav .tn-right .language-option img {
 	height: 26px;
 	width: 26px;
-	border-radius: 50%;
+	border-radius: 60%;
 	margin-right: 10px;
 }
 .top-nav .tn-right .language-option span {
@@ -454,17 +454,17 @@ ul, ol {
 	opacity: 1;
 }
 .menu-item .nav-menu .mainmenu li:hover .dropdown {
-	top: 77px;
+	top: 67px;
 	opacity: 1;
 	visibility: visible;
 }
 .menu-item .nav-menu .mainmenu li a {
 	font-size: 24px;
 	color: #ffffff;
-	margin-right: 42px;
+	margin-right: 32px;
 	font-weight: 500;
 	display: inline-block;
-	padding: 55px 0;
+	padding: 50px 0;
 	position: relative;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -476,7 +476,7 @@ ul, ol {
 	left: 0;
 	top: 52px;
 	width: 100%;
-	height: 2px;
+	height: 1px;
 	background: #5830a8;
 	content: "";
 	opacity: 0;
@@ -488,7 +488,7 @@ ul, ol {
 	position: absolute;
 	left: 0;
 	top: 97px;
-	width: 180px;
+	width: 18px;
 	background: #ffffff;
 	z-index: 9;
 	opacity: 0;
@@ -508,7 +508,7 @@ ul, ol {
 	color: #ffffff;
 	display: block;
 	text-align: left;
-	padding: 8px 15px;
+	padding: 2px 15px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -521,11 +521,11 @@ ul, ol {
 }
 .menu-item .nav-menu .nav-right {
 	display: inline-block;
-	margin-left: 43px;
-	padding: 27px 0px;
+	margin-left: px;
+	padding: 17px 0px;
 }
 .menu-item .nav-menu .nav-right i {
-	font-size: 16px;
+	font-size: 10px;
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -6296,7 +6296,7 @@ hr {
 .pricing-area .properties__caption span.month {
   font-size: 30px;
   font-weight: 500;
-  color: #fff;
+  color: #ff0000;
   text-transform: uppercase;
 }
 
@@ -6350,7 +6350,7 @@ hr {
 .pricing-area .properties .single-features .features-caption p {
   font-size: 16px;
   line-height: 1.7;
-  color: #fff;
+  color: #000000;
   text-transform: capitalize;
 }
 
@@ -10476,4 +10476,41 @@ del {
 		animation-timing-function: ease-in;
 		transform: translateY(0);
 	}
+}
+.scroll-box{
+  white-space: nowrap;
+  font-size: 1.1em;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: black;
+}
+.scroll-container{
+width: fit-content;
+direction: rtl; /*if you want to scroll left to right set dir to ltr */
+}
+#scroll-element{
+background-color: white;
+padding: 10px;
+}
+
+@-webkit-keyframes scroll{
+0% {
+  margin-right: 0%; /*if you want to scroll left to right set margin-left*/
+  
+}
+100%{
+  margin-right: 100%;/*if you want to scroll left to right set margin-left*/
+}
+}
+.row1>* {
+  flex-shrink: 0;
+  margin-top: var(--bs-gutter-y);
+  max-width: 100%;
+  padding-left: calc(var(--bs-gutter-x)*.5);
+  padding-right: calc(var(--bs-gutter-x)*.5);
+  width: 100%
+}
+.border{
+  border: 5px solid #f44336!important;
+ 
 }

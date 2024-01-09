@@ -114,12 +114,12 @@
 }
 
 .btn-17,
-.btn-17 .text-container {
+.btn-17 .text- {
   overflow: hidden;
   position: relative;
 }
 
-.btn-17 .text-container {
+.btn-17 .text- {
   display: block;
   mix-blend-mode: difference;
 }
@@ -710,17 +710,17 @@
     z-index: 99999
 }
 
-.dp__overlay_container::-webkit-scrollbar-track {
+.dp__overlay_::-webkit-scrollbar-track {
     background-color: var(--dp-scroll-bar-background);
     box-shadow: var(--dp-scroll-bar-background)
 }
 
-.dp__overlay_container::-webkit-scrollbar {
+.dp__overlay_::-webkit-scrollbar {
     background-color: var(--dp-scroll-bar-background);
     width: 5px
 }
 
-.dp__overlay_container::-webkit-scrollbar-thumb {
+.dp__overlay_::-webkit-scrollbar-thumb {
     background-color: var(--dp-scroll-bar-color);
     border-radius: 10px
 }
@@ -730,20 +730,20 @@
     outline: none
 }
 
-.dp__container_flex {
+.dp___flex {
     display: flex
 }
 
-.dp__container_block {
+.dp___block {
     display: block
 }
 
-.dp__overlay_container {
+.dp__overlay_ {
     flex-direction: column;
     overflow-y: auto
 }
 
-.dp__time_picker_overlay_container {
+.dp__time_picker_overlay_ {
     height: 100%
 }
 
@@ -885,7 +885,7 @@
     padding: 5px
 }
 
-.dp__time_picker_inline_container {
+.dp__time_picker_inline_ {
     display: flex;
     justify-content: center;
     width: 100%
@@ -2770,12 +2770,12 @@ input:checked+.slider:before {
     width: 100%!important
 }
 
-.input-container {
+.input- {
     position: relative;
     width: 100%
 }
 
-.input-container input[type=password],.input-container input[type=text] {
+.input- input[type=password],.input- input[type=text] {
     box-sizing: border-box;
     padding: 12px 36px 12px 12px;
     width: 100%
@@ -2914,7 +2914,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
     word-break: break-word
 }
 
-.container-line {
+.-line {
     position: relative;
     width: 100%
 }
@@ -3178,7 +3178,7 @@ div.shadow svg.icon-gradient path {
     top: 0
 }
 
-.promotionalertcontainer {
+.promotionalert {
     display: flex;
     justify-content: right;
     width: 100%
@@ -3231,7 +3231,7 @@ div.shadow svg.icon-gradient path {
 }
 
 @media only screen and (max-width: 768px) {
-    .promotionalertcontainer {
+    .promotionalert {
         display:flex;
         justify-content: center;
         overflow: hidden;
@@ -3261,7 +3261,7 @@ div.shadow svg.icon-gradient path {
     }
 }
 
-.cookiealertcontainer {
+.cookiealert {
     display: flex;
     justify-content: space-around;
     width: 100%
@@ -3293,7 +3293,7 @@ div.shadow svg.icon-gradient path {
 }
 
 @media only screen and (max-width: 768px) {
-    .cookiealertcontainer {
+    .cookiealert {
         display:flex;
         justify-content: center;
         width: 100%

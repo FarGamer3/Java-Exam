@@ -211,3 +211,7 @@
   });
 
 })(jQuery);
+
+var elemWidth = document.getElementById('scroll-element').offsetWidth;
+var time = elemWidth/80; /* 80 = scrolling speed (44px/s)*/
+document.getElementById('scroll-element').style.cssText = "animation: scroll "+time+"s linear infinite;"

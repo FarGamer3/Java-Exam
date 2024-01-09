@@ -3893,7 +3893,7 @@ hr {
 .pricing-area .properties .single-features .features-caption p {
   font-size: 16px;
   line-height: 1.7;
-  color: #fff;
+  color: #000000;
   text-transform: capitalize;
 }
 
@@ -6355,7 +6355,7 @@ hr {
 /* line 22, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_bradcam.scss */
 .bradcam_area h3 {
   font-size: 50px;
-  color: #fff;
+  color: #ffe9e9;
   font-weight: 900;
   margin-bottom: 0;
   font-family: "Oswald", sans-serif;
